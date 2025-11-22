@@ -1,7 +1,11 @@
 # Introduction
 This project analyzes Google Analytics data for a single day using SQL queries in Google BigQuery. It includes exploratory and targeted analyses to extract actionable insights about user behavior, engagement, retention, and revenue patterns from raw analytics data.
 
+
+Dataset used can be accessed here: [`bigquery-public-data.google_analytics_sample.ga_sessions_20170801`](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=google_analytics_sample&page=dataset&project=aayushi0719&ws=!1m9!1m3!3m2!1sbigquery-public-data!2sgoogle_analytics_sample!1m4!4m3!1sbigquery-public-data!2sgoogle_analytics_sample!3sga_sessions_20170801)
+
 Please review the SQL queries here: [sql_files folder](/sql_files/)
+
 
 # Project Overview
 I am performing exploratory analysis on Google Analytics sample data. I started with understanding the different visit components of the data and how fullVisitorId, visitId, and visitNumber interact to define users, sessions, and nth visits. I used window functions to compute visitor retention percentages and segmented traffic into new vs existing users. Further, I identified users with 10+ lifetime visits, categorizing them as heavy users, and investigated whether these high-retention users consistently returned via the same traffic source and device. This helps identify which channels and platforms are most important for repeat engagement and where to prioritize UX or personalization efforts.
